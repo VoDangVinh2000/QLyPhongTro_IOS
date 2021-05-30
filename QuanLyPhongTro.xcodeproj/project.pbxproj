@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC16D8262661353400A55AFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC16D8252661353400A55AFC /* AppDelegate.swift */; };
+		EC16D8282661353400A55AFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC16D8272661353400A55AFC /* ViewController.swift */; };
+		EC16D82B2661353400A55AFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC16D8292661353400A55AFC /* Main.storyboard */; };
+		EC16D82D2661353400A55AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC16D82C2661353400A55AFC /* Assets.xcassets */; };
+		EC16D8302661353400A55AFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC16D82E2661353400A55AFC /* LaunchScreen.storyboard */; };
+		EC16D83B2661353400A55AFC /* QuanLyPhongTroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC16D83A2661353400A55AFC /* QuanLyPhongTroUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC16D8372661353400A55AFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC16D81A2661353400A55AFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC16D8212661353400A55AFC;
+			remoteInfo = QuanLyPhongTro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC16D8222661353400A55AFC /* QuanLyPhongTro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuanLyPhongTro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC16D8252661353400A55AFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC16D8272661353400A55AFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC16D82A2661353400A55AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC16D82C2661353400A55AFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC16D82F2661353400A55AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC16D8312661353400A55AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC16D8362661353400A55AFC /* QuanLyPhongTroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuanLyPhongTroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC16D83A2661353400A55AFC /* QuanLyPhongTroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuanLyPhongTroUITests.swift; sourceTree = "<group>"; };
+		EC16D83C2661353400A55AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC16D81F2661353400A55AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC16D8332661353400A55AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC16D8192661353400A55AFC = {
+			isa = PBXGroup;
+			children = (
+				EC16D8242661353400A55AFC /* QuanLyPhongTro */,
+				EC16D8392661353400A55AFC /* QuanLyPhongTroUITests */,
+				EC16D8232661353400A55AFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC16D8232661353400A55AFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC16D8222661353400A55AFC /* QuanLyPhongTro.app */,
+				EC16D8362661353400A55AFC /* QuanLyPhongTroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC16D8242661353400A55AFC /* QuanLyPhongTro */ = {
+			isa = PBXGroup;
+			children = (
+				EC16D8252661353400A55AFC /* AppDelegate.swift */,
+				EC16D8272661353400A55AFC /* ViewController.swift */,
+				EC16D8292661353400A55AFC /* Main.storyboard */,
+				EC16D82C2661353400A55AFC /* Assets.xcassets */,
+				EC16D82E2661353400A55AFC /* LaunchScreen.storyboard */,
+				EC16D8312661353400A55AFC /* Info.plist */,
+			);
+			path = QuanLyPhongTro;
+			sourceTree = "<group>";
+		};
+		EC16D8392661353400A55AFC /* QuanLyPhongTroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC16D83A2661353400A55AFC /* QuanLyPhongTroUITests.swift */,
+				EC16D83C2661353400A55AFC /* Info.plist */,
+			);
+			path = QuanLyPhongTroUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC16D8212661353400A55AFC /* QuanLyPhongTro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC16D83F2661353400A55AFC /* Build configuration list for PBXNativeTarget "QuanLyPhongTro" */;
+			buildPhases = (
+				EC16D81E2661353400A55AFC /* Sources */,
+				EC16D81F2661353400A55AFC /* Frameworks */,
+				EC16D8202661353400A55AFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuanLyPhongTro;
+			productName = QuanLyPhongTro;
+			productReference = EC16D8222661353400A55AFC /* QuanLyPhongTro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC16D8352661353400A55AFC /* QuanLyPhongTroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC16D8422661353400A55AFC /* Build configuration list for PBXNativeTarget "QuanLyPhongTroUITests" */;
+			buildPhases = (
+				EC16D8322661353400A55AFC /* Sources */,
+				EC16D8332661353400A55AFC /* Frameworks */,
+				EC16D8342661353400A55AFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC16D8382661353400A55AFC /* PBXTargetDependency */,
+			);
+			name = QuanLyPhongTroUITests;
+			productName = QuanLyPhongTroUITests;
+			productReference = EC16D8362661353400A55AFC /* QuanLyPhongTroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC16D81A2661353400A55AFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = VoDangVinh;
+				TargetAttributes = {
+					EC16D8212661353400A55AFC = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					EC16D8352661353400A55AFC = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC16D8212661353400A55AFC;
+					};
+				};
+			};
+			buildConfigurationList = EC16D81D2661353400A55AFC /* Build configuration list for PBXProject "QuanLyPhongTro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC16D8192661353400A55AFC;
+			productRefGroup = EC16D8232661353400A55AFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC16D8212661353400A55AFC /* QuanLyPhongTro */,
+				EC16D8352661353400A55AFC /* QuanLyPhongTroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC16D8202661353400A55AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC16D8302661353400A55AFC /* LaunchScreen.storyboard in Resources */,
+				EC16D82D2661353400A55AFC /* Assets.xcassets in Resources */,
+				EC16D82B2661353400A55AFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC16D8342661353400A55AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC16D81E2661353400A55AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC16D8282661353400A55AFC /* ViewController.swift in Sources */,
+				EC16D8262661353400A55AFC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC16D8322661353400A55AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC16D83B2661353400A55AFC /* QuanLyPhongTroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC16D8382661353400A55AFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC16D8212661353400A55AFC /* QuanLyPhongTro */;
+			targetProxy = EC16D8372661353400A55AFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC16D8292661353400A55AFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC16D82A2661353400A55AFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC16D82E2661353400A55AFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC16D82F2661353400A55AFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC16D83D2661353400A55AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC16D83E2661353400A55AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC16D8402661353400A55AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QuanLyPhongTro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PhongTroTDC.QuanLyPhongTro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EC16D8412661353400A55AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QuanLyPhongTro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PhongTroTDC.QuanLyPhongTro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EC16D8432661353400A55AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = QuanLyPhongTroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PhongTroTDC.QuanLyPhongTroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = QuanLyPhongTro;
+			};
+			name = Debug;
+		};
+		EC16D8442661353400A55AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = QuanLyPhongTroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PhongTroTDC.QuanLyPhongTroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = QuanLyPhongTro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC16D81D2661353400A55AFC /* Build configuration list for PBXProject "QuanLyPhongTro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC16D83D2661353400A55AFC /* Debug */,
+				EC16D83E2661353400A55AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC16D83F2661353400A55AFC /* Build configuration list for PBXNativeTarget "QuanLyPhongTro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC16D8402661353400A55AFC /* Debug */,
+				EC16D8412661353400A55AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC16D8422661353400A55AFC /* Build configuration list for PBXNativeTarget "QuanLyPhongTroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC16D8432661353400A55AFC /* Debug */,
+				EC16D8442661353400A55AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC16D81A2661353400A55AFC /* Project object */;
+}
