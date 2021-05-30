@@ -13,6 +13,7 @@
 		EC16D82D2661353400A55AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC16D82C2661353400A55AFC /* Assets.xcassets */; };
 		EC16D8302661353400A55AFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC16D82E2661353400A55AFC /* LaunchScreen.storyboard */; };
 		EC16D83B2661353400A55AFC /* QuanLyPhongTroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC16D83A2661353400A55AFC /* QuanLyPhongTroUITests.swift */; };
+		EC63B8AC266344C0008AFD96 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC63B8AB266344C0008AFD96 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		EC16D8362661353400A55AFC /* QuanLyPhongTroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuanLyPhongTroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC16D83A2661353400A55AFC /* QuanLyPhongTroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuanLyPhongTroUITests.swift; sourceTree = "<group>"; };
 		EC16D83C2661353400A55AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC63B8AB266344C0008AFD96 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				EC16D82C2661353400A55AFC /* Assets.xcassets */,
 				EC16D82E2661353400A55AFC /* LaunchScreen.storyboard */,
 				EC16D8312661353400A55AFC /* Info.plist */,
+				EC63B8AB266344C0008AFD96 /* Common.swift */,
 			);
 			path = QuanLyPhongTro;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC16D8282661353400A55AFC /* ViewController.swift in Sources */,
+				EC63B8AC266344C0008AFD96 /* Common.swift in Sources */,
 				EC16D8262661353400A55AFC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +406,7 @@
 				EC16D8412661353400A55AFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC16D8422661353400A55AFC /* Build configuration list for PBXNativeTarget "QuanLyPhongTroUITests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +415,7 @@
 				EC16D8442661353400A55AFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
