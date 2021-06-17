@@ -63,7 +63,7 @@ class DanhSachPhongVC: UITableViewController {
                 let phongModel = PhongModel()
                 let tenphong = DatabaseModel.getInstance().layTenPhong(tenP: customView.textField.text ?? "")
                 if  tenphong == customView.textField.text{
-                      Util.alert1Action(title: "Thành công", message: "Đã có tên phòng", view: self, isDismiss: false, isPopViewController: false)
+                      Util.alert1Action(title: "Thông báo tên phòng", message: "Đã có tên phòng", view: self, isDismiss: false, isPopViewController: false)
                 }
                 else{
                     phongModel.tenphong = customView.textField.text!
@@ -139,12 +139,13 @@ extension DanhSachPhongVC {
                 self.phongModels?.remove(at: indexPath.row)
                 self.tableView.deleteRows(at: [indexPath], with: .automatic)
             } else {
-                let xoaKhach = DatabaseModel.getInstance().xoaKhachTheoIdPhong(idPhong: (self.phongModels?[indexPath.row].id!)!)
+                     Util.alert1Action(title: "Thông báo", message: "Phòng đang có người, không thể xoá!", view: self, isDismiss: false, isPopViewController: false)
+                /*let xoaKhach = DatabaseModel.getInstance().xoaKhachTheoIdPhong(idPhong: (self.phongModels?[indexPath.row].id!)!)
                 if xoaKhach {
                     _ = DatabaseModel.getInstance().xoaPhong(idPhong: (self.phongModels?[indexPath.row].id!)!)
                     self.phongModels?.remove(at: indexPath.row)
                     self.tableView.deleteRows(at: [indexPath], with: .automatic)
-                }
+                }*/
             }
         }
         xoaBT.backgroundColor = .red

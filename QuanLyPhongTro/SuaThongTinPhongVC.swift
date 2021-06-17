@@ -144,22 +144,29 @@ class SuaThongTinPhongVC: UIViewController {
     }
     
     @objc private func suaThongTinPhong() {
+        let soNguoi:Int? = Int((tfSoNguoi.text)!)
         let loaiPhong: Int
         if swLoaiPhong.isOn {
             loaiPhong = 1
         } else {
             loaiPhong = 0
         }
-        let suaPhong = DatabaseModel.getInstance().suaThongTinPhong(tenPhong: tfTenPhong.text!, ngayDat: tfNgayDat.text!, tienPhong: Int(tfTienPhong.text!)!, soNguoi: Int(tfSoNguoi.text!)!, ngayThanhToan: tfNgayThanhToan.text!, loaiPhong: loaiPhong, idPhong: idPhong!)
-        
-        if suaPhong {
-            let suaKhach = DatabaseModel.getInstance().suaThongTinKhach(tenKhach: tfHoTen.text!, sdt: tfSDT.text!, diaChi: tfDiaChi.text!, idPhong: idPhong)
+        if soNguoi! >  4{
+            Util.alert1Action(title: "Thông báo", message: "Phòng không quá 4 người", view: self, isDismiss: false, isPopViewController: false)
+        }
+        else{
+            let suaPhong = DatabaseModel.getInstance().suaThongTinPhong(tenPhong: tfTenPhong.text!, ngayDat: tfNgayDat.text!, tienPhong: Int(tfTienPhong.text!)!, soNguoi: Int(tfSoNguoi.text!)!, ngayThanhToan: tfNgayThanhToan.text!, loaiPhong: loaiPhong, idPhong: idPhong!)
             
-            if suaKhach {
-                Util.alert1Action(title: "Thành công", message: "Sửa thông tin phòng thành công", view: self, isDismiss: true, isPopViewController: false)
-                callBack?()
+            if suaPhong {
+                let suaKhach = DatabaseModel.getInstance().suaThongTinKhach(tenKhach: tfHoTen.text!, sdt: tfSDT.text!, diaChi: tfDiaChi.text!, idPhong: idPhong)
+                
+                if suaKhach {
+                    Util.alert1Action(title: "Thành công", message: "Sửa thông tin phòng thành công", view: self, isDismiss: true, isPopViewController: false)
+                    callBack?()
+                }
             }
         }
+      
     }
     
     @objc private func huy() {
