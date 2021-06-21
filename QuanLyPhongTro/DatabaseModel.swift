@@ -67,30 +67,30 @@ class DatabaseModel: NSObject {
         sharedInstance.database!.close()
         return itemInfo
     }
-    //
+    //Hàm lấy loại phòng
     func demSoPhongCoDieuKien(idNguoiTao: Int, loaiPhongId: Int) -> NSMutableArray {
-        sharedInstance.database!.open()
-        let resultSet:FMResultSet! = sharedInstance.database!.executeQuery("SELECT * FROM phong WHERE id_nguoitao = ? and loaiphong = ?", withArgumentsIn: [idNguoiTao, loaiPhongId])
-        
-        let itemInfo: NSMutableArray = NSMutableArray ()
-        if (resultSet != nil)
-        {
-            while resultSet.next() {
-                let item = PhongModel()
-                item.id = Int(resultSet.int(forColumn: "id"))
-                item.tenphong = String(resultSet.string(forColumn: "tenphong")!)
-                item.trangthai = Int(resultSet.int(forColumn: "trangthai"))
-                item.songuoi = Int(resultSet.int(forColumn: "songuoi"))
-                item.ngaydat = String(resultSet.string(forColumn: "ngaydat")!)
-                item.tienphong = Int(resultSet.int(forColumn: "tienphong"))
-                item.ngaythanhtoan = String(resultSet.string(forColumn: "ngaythanhtoan")!)
-                item.loaiphong = Int(resultSet.int(forColumn: "loaiphong"))
-                itemInfo.add(item)
-            }
-        }
-        sharedInstance.database!.close()
-        return itemInfo
-    }
+     sharedInstance.database!.open()
+     let resultSet:FMResultSet! = sharedInstance.database!.executeQuery("SELECT * FROM phong WHERE id_nguoitao = ? and loaiphong = ?", withArgumentsIn: [idNguoiTao, loaiPhongId])
+     
+     let itemInfo: NSMutableArray = NSMutableArray ()
+     if (resultSet != nil)
+     {
+     while resultSet.next() {
+     let item = PhongModel()
+     item.id = Int(resultSet.int(forColumn: "id"))
+     item.tenphong = String(resultSet.string(forColumn: "tenphong")!)
+     item.trangthai = Int(resultSet.int(forColumn: "trangthai"))
+     item.songuoi = Int(resultSet.int(forColumn: "songuoi"))
+     item.ngaydat = String(resultSet.string(forColumn: "ngaydat")!)
+     item.tienphong = Int(resultSet.int(forColumn: "tienphong"))
+     item.ngaythanhtoan = String(resultSet.string(forColumn: "ngaythanhtoan")!)
+     item.loaiphong = Int(resultSet.int(forColumn: "loaiphong"))
+     itemInfo.add(item)
+     }
+     }
+     sharedInstance.database!.close()
+     return itemInfo
+     }
     //Hàm thêm phòng
     func themPhong(_ PhongModel: PhongModel) -> Bool {
         sharedInstance.database!.open()
@@ -144,7 +144,7 @@ class DatabaseModel: NSObject {
         sharedInstance.database?.close()
         return item
     }
-    //Hàm lấy thông tin khách
+    //Hàm lấy thông tin khách theo id
     func layThongTinKhach(idPhong: Int) -> KhachModel {
         sharedInstance.database!.open()
         let resultSet: FMResultSet! = sharedInstance.database!.executeQuery("SELECT * FROM khachdatphong WHERE id_phong = ?", withArgumentsIn: [idPhong])

@@ -43,7 +43,6 @@ class ManHinhChinhVC: UIViewController {
         vThongTin.layer.shadowRadius = 5
         vThongTin.layer.cornerRadius = 5
         vThongTin.layer.masksToBounds = false
-        
         lblTenNguoiDung.text = tenNguoiDung
         lblTenDangNhap.text = tenDangNhap
     }
@@ -89,7 +88,6 @@ class ManHinhChinhVC: UIViewController {
         alert.addAction(UIAlertAction(title: "Không", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
-    
 }
  //CollectionView cho màn hình chính
 extension ManHinhChinhVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

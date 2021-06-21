@@ -70,9 +70,8 @@ class SuaThongTinPhongVC: UIViewController {
                 swLoaiPhong.isOn = false
             }
         }
-        
         // Nếu type = 1 (Phòng đang có người ở) thì là sửa thông tin phòng
-        if type == 1 {
+        else{
             swLoaiPhong.isUserInteractionEnabled = true
             layThongTinPhong()
             layThongTinKhach()
@@ -112,6 +111,8 @@ class SuaThongTinPhongVC: UIViewController {
         navigationController?.navigationBar.barTintColor = .orange
         navigationController?.navigationBar.barStyle = .black
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+         tfNgayDat.isUserInteractionEnabled = false
+        textFieldDidBeginEditing(tfNgayThanhToan)
     }
     
     @objc private func datPhong() {
@@ -146,6 +147,9 @@ class SuaThongTinPhongVC: UIViewController {
     @objc private func suaThongTinPhong() {
         let soNguoi:Int? = Int((tfSoNguoi.text)!)
         let loaiPhong: Int
+        if tfHoTen.text == "" || tfSDT.text == "" || tfDiaChi.text == "" || tfNgayDat.text == "" || tfSoNguoi.text == "" || tfTienPhong.text == "" || tfNgayThanhToan.text == "" {
+            Util.alert1Action(title: "Thông báo", message: "Vui lòng nhập đầy đủ thông tin", view: self, isDismiss: false, isPopViewController: false)
+        }
         if swLoaiPhong.isOn {
             loaiPhong = 1
         } else {
@@ -154,6 +158,7 @@ class SuaThongTinPhongVC: UIViewController {
         if soNguoi! >  4{
             Util.alert1Action(title: "Thông báo", message: "Phòng không quá 4 người", view: self, isDismiss: false, isPopViewController: false)
         }
+           
         else{
             let suaPhong = DatabaseModel.getInstance().suaThongTinPhong(tenPhong: tfTenPhong.text!, ngayDat: tfNgayDat.text!, tienPhong: Int(tfTienPhong.text!)!, soNguoi: Int(tfSoNguoi.text!)!, ngayThanhToan: tfNgayThanhToan.text!, loaiPhong: loaiPhong, idPhong: idPhong!)
             
@@ -162,11 +167,10 @@ class SuaThongTinPhongVC: UIViewController {
                 
                 if suaKhach {
                     Util.alert1Action(title: "Thành công", message: "Sửa thông tin phòng thành công", view: self, isDismiss: true, isPopViewController: false)
-                    callBack?()
+                   // callBack?()
                 }
             }
         }
-      
     }
     
     @objc private func huy() {
@@ -177,14 +181,9 @@ class SuaThongTinPhongVC: UIViewController {
     //UIdatepicker
     @objc private func datePickerDone() {
         if tag == 1 {
-            tfNgayDat.resignFirstResponder()
+             tfNgayThanhToan.resignFirstResponder()
             dateChanged()
        }
-        
-        if tag == 2 {
-            tfNgayThanhToan.resignFirstResponder()
-            dateChanged()
-        }
     }
     
     @objc private func dateChanged() {
@@ -192,12 +191,8 @@ class SuaThongTinPhongVC: UIViewController {
         dateFormatter.dateFormat = "dd/MM/yyyy"
         
         if tag == 1 {
-            tfNgayDat.text = dateFormatter.string(from: datePicker.date)
-        }
-        
-        if tag == 2 {
-            tfNgayThanhToan.text = dateFormatter.string(from: datePicker.date)
-        }
+              tfNgayThanhToan.text = dateFormatter.string(from: datePicker.date)
+       }
     }
     
 }
@@ -206,12 +201,8 @@ extension SuaThongTinPhongVC: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
-        if textField == tfNgayDat {
-            tag = 1
-        }
-        
         if textField == tfNgayThanhToan {
-            tag = 2
+            tag = 1
         }
         
     }

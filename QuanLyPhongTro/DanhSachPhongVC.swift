@@ -92,7 +92,6 @@ class DanhSachPhongVC: UITableViewController {
         alertController.addAction(UIAlertAction(title: "HUỶ", style: .default))
         self.present(alertController, animated: true, completion: nil)
     }
-    
 }
 
 extension DanhSachPhongVC {
@@ -112,6 +111,7 @@ extension DanhSachPhongVC {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //Nếu trạng thái phòng là trống
         if phongModels?[indexPath.row].trangthai == 0 {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "SuaThongTinPhongVC") as! SuaThongTinPhongVC
@@ -122,6 +122,7 @@ extension DanhSachPhongVC {
             vc.idNguoiDung = idNguoiDung
             self.navigationController?.pushViewController(vc, animated: true)
         } else {
+            //Có người
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "ChiTietPhongVC") as! ChiTietPhongVC
             vc.idPhong = phongModels?[indexPath.row].id

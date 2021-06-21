@@ -36,7 +36,7 @@ class PhongTBCell: UITableViewCell {
                     lblStatus.textColor = .blue
                     iconPhong.tintColor = .blue
                     lblDate.text = "Ngày đặt: \(phongModel?.ngaydat ?? "")"
-                    lblDate.textColor = .blue
+                    lblDate.textColor = .black
                 }
                 if status == 2 {
                     lblName.textColor = .red
@@ -59,7 +59,6 @@ class PhongTBCell: UITableViewCell {
                     }
                 }
             }
-            
         }
     }
     
