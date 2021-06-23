@@ -167,7 +167,7 @@ class SuaThongTinPhongVC: UIViewController {
                 
                 if suaKhach {
                     Util.alert1Action(title: "Thành công", message: "Sửa thông tin phòng thành công", view: self, isDismiss: true, isPopViewController: false)
-                   // callBack?()
+                    callBack?()
                 }
             }
         }

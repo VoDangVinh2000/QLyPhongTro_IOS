@@ -12,12 +12,11 @@ class DangNhapVC: UIViewController {
     
     @IBOutlet weak var tfTenDangNhap: UITextField!
     @IBOutlet weak var tfMatKhau: UITextField!
-    //cell.imageView.image = #imageLiteral(resourceName: "guest").withRenderingMode(.alwaysTemplate)
     @IBOutlet weak var ivUser: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-         ivUser.image? = #imageLiteral(resourceName: "user-login").withRenderingMode(.alwaysTemplate)
+        ivUser.image = #imageLiteral(resourceName: "user-login").withRenderingMode(.alwaysTemplate)
         setupNavigation()
     }
     //Thiết lập navigation
