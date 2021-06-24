@@ -66,7 +66,7 @@ class ChiTietPhongVC: UIViewController {
     
     @IBAction func dangNo() {
         let isUpdated = DatabaseModel.getInstance().thayDoiTrangThaiPhong(trangThai: 2, idPhong: idPhong!, ngayThanhToan: "")
-        
+        //
         if isUpdated {
             Util.alert1Action(title: "Đã xác nhận đang nợ", message: "", view: self, isDismiss: false, isPopViewController: false)
         }
