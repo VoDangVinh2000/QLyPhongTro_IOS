@@ -20,7 +20,7 @@ class DatabaseModel: NSObject {
         }
         return sharedInstance
     }
-    //Hàm đăng ký tài khoản
+    //Hàm đăng ký tài khoản cho admin
     func dangKyTaiKhoan(_ TaiKhoanModel: TaiKhoanModel) -> Bool {
         sharedInstance.database!.open()
         let isInserted = sharedInstance.database!.executeUpdate("INSERT INTO nguoidung (tennguoidung, tendangnhap, matkhau) VALUES(?, ?, ?)", withArgumentsIn: [TaiKhoanModel.tennguoidung!, TaiKhoanModel.tendangnhap!, TaiKhoanModel.matkhau!])
