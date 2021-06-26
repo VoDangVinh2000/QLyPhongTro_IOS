@@ -2,7 +2,7 @@
 //  Util.swift
 //  QuanLyPhongTro
 //
-//  Created by Võ Đăng Vĩnh on 20/04/2021.
+//  Created by Võ Đăng Vĩnh on 2/06/2021.
 //  Copyright © 2021 Võ Đăng Vĩnh. All rights reserved.
 //
 
