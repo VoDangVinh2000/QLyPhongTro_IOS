@@ -2,8 +2,8 @@
 //  DanhSachKhachVC.swift
 //  QuanLyPhongTro
 //
-//  Created by Nguyễn Hải Âu on 8/8/20.
-//  Copyright © 2020 Nguyễn Hải Âu. All rights reserved.
+//  Created by Võ Đăng Vĩnh on 20/04/2021.
+//  Copyright © 2021 Võ Đăng Vĩnh. All rights reserved.
 //
 
 import UIKit
