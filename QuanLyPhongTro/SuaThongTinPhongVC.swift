@@ -64,6 +64,7 @@ class SuaThongTinPhongVC: UIViewController {
             btnLuu.addTarget(self, action: #selector(datPhong), for: .touchUpInside)
             tfTenPhong.isUserInteractionEnabled = false
             swLoaiPhong.isUserInteractionEnabled = false
+            tfNgayDat.isUserInteractionEnabled = true
             if loaiphong == 1 {
                 swLoaiPhong.isOn = true
             } else {
@@ -81,6 +82,7 @@ class SuaThongTinPhongVC: UIViewController {
             let item = UIBarButtonItem(title: "Huỷ", style: .plain, target: self, action: #selector(huy))
             item.tintColor = .white
             self.navigationItem.rightBarButtonItem = item
+            tfNgayDat.isUserInteractionEnabled = false
         }
     }
     
@@ -111,7 +113,7 @@ class SuaThongTinPhongVC: UIViewController {
         navigationController?.navigationBar.barTintColor = .orange
         navigationController?.navigationBar.barStyle = .black
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-         tfNgayDat.isUserInteractionEnabled = false
+        
         textFieldDidBeginEditing(tfNgayThanhToan)
     }
     
