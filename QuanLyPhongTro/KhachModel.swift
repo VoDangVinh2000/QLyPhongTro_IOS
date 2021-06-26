@@ -9,7 +9,7 @@
 import UIKit
 
 class KhachModel: NSObject {
-    
+    //khmd
     var id: Int?
     var hoten: String?
     var sdt: String?

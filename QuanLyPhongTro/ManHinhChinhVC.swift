@@ -9,7 +9,7 @@
 import UIKit
 
 class ManHinhChinhVC: UIViewController {
-    
+    //mhcvc
     @IBOutlet weak var vThongTin: UIView!
     @IBOutlet weak var lblTenNguoiDung: UILabel!
     @IBOutlet weak var lblTenDangNhap: UILabel!

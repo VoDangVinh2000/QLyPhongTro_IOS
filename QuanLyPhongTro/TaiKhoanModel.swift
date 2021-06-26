@@ -9,7 +9,7 @@
 import UIKit
 
 class TaiKhoanModel: NSObject {
-    
+    //tkmd
     var id: Int?
     var tennguoidung: String?
     var tendangnhap: String?

@@ -9,7 +9,7 @@
 import UIKit
 
 class PhongModel: NSObject {
-    
+    //phmd
     var id: Int?
     var tenphong: String?
     var trangthai: Int?
