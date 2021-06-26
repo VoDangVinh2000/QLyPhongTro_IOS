@@ -9,7 +9,7 @@
 import UIKit
 
 class DangKyVC: UIViewController {
-    
+    //dk
     @IBOutlet weak var tfTenNguoiDung: UITextField!
     @IBOutlet weak var tfTenDangNhap: UITextField!
     @IBOutlet weak var tfMatKhau: UITextField!
